@@ -7,20 +7,22 @@ import AppButton from '../../components/AppButton/AppButton'
 import { blue } from '../../Config/color'
 
 
-export default function LoginScreen() {
+export default function RegisterScreen() {
     return (
         <View style={styles.screen}>
            <Header>Login</Header>
            <View style={styles.container}>
+                <AppInput label='Name'/>
                 <AppInput label='Email'/>
                 <AppInput label='Password'/>
+                <AppInput label='Confirm Password'/>
            </View>
            <View style={styles.inputContainer}>
-                <AppButton >Login</AppButton>
+                <AppButton >Register</AppButton>
            </View>
            <Text style={styles.text}>
-               If you don't have account  
-               <Text style={styles.span}> Register</Text>
+               If you have account  
+               <Text style={styles.span}> Login</Text>
             </Text>
         </View>
     )

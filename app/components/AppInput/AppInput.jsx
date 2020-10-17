@@ -2,12 +2,12 @@ import React from 'react'
 import { TextInput } from 'react-native-paper';
 import { StyleSheet, } from 'react-native'
 
-export default function AppInput() {
+export default function AppInput({label}) {
     const [text, setText] = React.useState('');
 
   return (
     <TextInput
-      label="Email"
+      label={label}
       mode='outlined'
       value={text}
       onChangeText={text => setText(text)}
@@ -22,5 +22,6 @@ const styles = StyleSheet.create({
     input:{
         width: '95%',
         marginLeft: 10,
+        marginTop:15
     }
 })
