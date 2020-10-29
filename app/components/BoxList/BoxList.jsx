@@ -22,6 +22,7 @@ export default function BoxList() {
                         style={styles.checkbox}
                     />
                 </View>
+                <Text></Text>
             </View>
         </View>
       
