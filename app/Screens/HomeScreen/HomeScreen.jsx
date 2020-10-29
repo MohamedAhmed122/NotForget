@@ -2,10 +2,9 @@ import React from 'react'
 import { StyleSheet, Text, View , Image, TouchableOpacity} from 'react-native'
 import  Header  from '../../components/Header/Header'
 import Constants from 'expo-constants'
-import { Feather } from '@expo/vector-icons';
-
 import PlusButton from '../../components/PlusButton/PlusButton'
-import { black } from '../../Config/color';
+
+
 const HomeScreen = () => {
     return (
         <View style={styles.screen}>
